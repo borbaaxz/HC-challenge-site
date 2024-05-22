@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary-color: #0a4275;
+$secondary-color: #333;
+$link-color: #007bff;
+$text-muted-color: #6c757d;
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1.font-weight-bold {
+  font-weight: bolder;
+}
+
+#homevector {
+  max-width: 100%;
+  height: auto;
+}
+
+.animate-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.display-4 {
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.img-vertical {
+  max-height: 600px;
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+a.text-white {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.text-white:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 990px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: start;
+
+    .nav-link,
+    .nav-dropdown {
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-dropdown .dropdown-menu {
+      position: static;
+      transform: none;
+      box-shadow: none;
+      border: none;
+      padding: 0 1rem;
+
+      .dropdown-item {
+        padding: 0.25rem 1rem;
+      }
+    }
+  }
+}
+
+.contact-info {
+  line-height: 1.8;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.text-muted {
+  color: $text-muted-color;
+}
+
+@media (max-width: 765px) {
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+}
+
+.nav-link-custom {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $secondary-color;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.nav-dropdown-custom .dropdown-toggle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $secondary-color;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item-custom {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+  .nav-link-custom,
+  .nav-dropdown-custom .dropdown-toggle {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .dropdown-item-custom {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+#agendar {
+  margin-top: 1rem;
+}
+
+.footer {
+  max-height: 60px;
+}
+
+.videoWrapper{
+  width: 100%;
+  height: 400px;
+}
+
